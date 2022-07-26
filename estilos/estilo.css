@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+    --fonte01: 'Square Peg', cursive;
+    --fonte02: 'Rubik', sans-serif;
+}
+
+body {
+    background-color: rgb(227, 236, 236);
+    min-height: 100vh;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-family: var(--fonte01);
+    font-variant: small-caps;
+    font-size: 7em;
+}
+
+header > p {
+    color: white;
+    padding-bottom: 40px; 
+}
+
+section {
+    padding-top: 12vh;
+    padding-bottom: 12vh;
+    padding-left: 40px;
+}
+
+section > p {
+    font-family: var(--fonte02);
+    font-size: 1.3em;
+    line-height: 2.3em;
+}
+
+section.normal {
+    color: rgb(34, 33, 33);
+}
+
+section.imagem {
+    background-color: rgb(29, 27, 27);
+    color: white;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 5px 5px 15px 0px rgba(0, 0, 0, 0.5);
+}
+
+section.imagem > p {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.781);
+    border-radius: 5px;
+    padding: 15px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.849);
+}
+
+section#img1 {
+    background-image: url('../imagens/img06.jpg');
+}
+
+section#img2 {
+    background-image: url('../imagens/img02.jpg');
+}
+
+section#img3 {
+    background-image: url('../imagens/img05.jpg');
+}
+
+footer {
+    background-color: rgb(34, 33, 33);
+    color: white;
+    text-align: center;
+    padding: 12px;
+}
+
